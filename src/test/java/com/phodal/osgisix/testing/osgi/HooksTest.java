@@ -47,7 +47,11 @@ public class HooksTest extends BaseTest {
     @BeforeClass
     public static void beforeClass() {
         BundleContext bContext = FrameworkUtil.getBundle(HooksTest.class).getBundleContext();
-        bContext.registerService(Runnable.class, () -> {}, null);
+        Runnable b;
+        bContext.registerService(Runnable.class, new Runnable(){
+            public void run(){
+            }
+        }, null);
         System.out.println("beforeClass");
     }
     

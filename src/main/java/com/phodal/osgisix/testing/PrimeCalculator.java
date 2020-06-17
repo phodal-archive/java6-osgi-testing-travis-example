@@ -14,10 +14,11 @@ import org.osgi.service.component.annotations.Component;
         )
 public class PrimeCalculator {
     
-    public Stream<Integer> until(int max) {
-        return rangeClosed(2, max)
-                .filter(this::isPrime)
-                .mapToObj(Integer::new);
+    public Integer until(int max) {
+//        return rangeClosed(2, max)
+//                .filter(this::isPrime)
+//                .mapToObj(Integer::new);
+         return 1;
     }
     
     public boolean isPrime(Integer number) {

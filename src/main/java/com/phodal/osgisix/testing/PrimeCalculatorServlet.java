@@ -43,7 +43,7 @@ public class PrimeCalculatorServlet extends HttpServlet {
         Integer max = new Integer(req.getParameter("max"));
         PrintWriter writer = resp.getWriter();
         writer.println(title);
-        calculator.until(max).forEach(writer::println);
+//        calculator.until(max).forEach(writer::println);
     }
     
     @ObjectClassDefinition(name = "Prime servlet config")

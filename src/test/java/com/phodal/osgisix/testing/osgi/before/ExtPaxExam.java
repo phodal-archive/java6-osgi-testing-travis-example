@@ -21,9 +21,13 @@ package com.phodal.osgisix.testing.osgi.before;
 import static java.util.Arrays.asList;
 
 import java.lang.annotation.Annotation;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
+import java.util.Arrays;
 import java.util.Optional;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 import org.junit.runner.notification.RunNotifier;
 import org.junit.runners.model.InitializationError;
@@ -46,14 +50,31 @@ public class ExtPaxExam extends PaxExam {
 
     @Override
     public void run(RunNotifier notifier) {
-        this.before.ifPresent(this::invoke);
+        Consumer<Method> consumer = new Consumer<Method>() {
+            @Override
+            public void accept(Method method) {
+                try {
+                    method.invoke(null);
+                } catch (Exception e) {
+                    throw new RuntimeException("Error calling method " + method, e);
+                }
+            }
+        };
+        this.before.ifPresent(consumer);
         super.run(notifier);
-        this.after.ifPresent(this::invoke);
+        this.after.ifPresent(consumer);
     }
     
     private Optional<Method> getStaticMethodWith(Class<?> klass, Class<? extends Annotation> annotation) {
-        Optional<Method> foundMethod = asList(klass.getMethods()).stream()
-            .filter(method -> method.getAnnotation(annotation) != null)
+        final Class<? extends Annotation> annotation1 = annotation;
+        Predicate<Method> methodPredicate = new Predicate<Method>() {
+            @Override
+            public boolean test(Method method) {
+                return method.getAnnotation(annotation1) != null;
+            }
+        };
+        Optional<Method> foundMethod = Arrays.stream(klass.getMethods())
+            .filter(methodPredicate)
             .findFirst();
         if (foundMethod.isPresent()) {
             Method m = foundMethod.get();

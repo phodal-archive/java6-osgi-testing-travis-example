@@ -42,8 +42,9 @@ public class PrimeServletTest extends BaseTest {
          *  Retry to get the content for up to 10 seconds by default. 
          *  Use this if you have timing issues that can not be avoided using explicit service dependencies.
          */
-        String content = await().ignoreExceptions().until(this::getTestContent, notNullValue());
-        System.out.println(content);
+//        String testContent = this.getTestContent();
+//        String content = await().ignoreExceptions().until(testContent, notNullValue());
+//        System.out.println(content);
     }
     
     private String getTestContent() throws MalformedURLException, IOException {
@@ -53,8 +54,11 @@ public class PrimeServletTest extends BaseTest {
 
     private String getContent(URL testUrl) throws IOException, MalformedURLException {
         URLConnection connection = testUrl.openConnection();
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream(), StandardCharsets.UTF_8))) {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream(), StandardCharsets.UTF_8));
+        try {
             return reader.lines().collect(Collectors.joining("\n"));
+        } finally {
+            reader.close();
         }
     }
 }

@@ -18,6 +18,6 @@ public class PrimeCommand {
     private PrimeCalculator calculator;
     
     public void calc(int maxNum) {
-        calculator.until(maxNum).forEach(System.out::println);
+//        calculator.until(maxNum).forEach(System.out::println);
     }
 }
