@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package net.lr.example.testing.osgi.before;
+package com.phodal.osgisix.testing.osgi.before;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -25,6 +25,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-public @interface BeforeOsgi {
+public @interface AfterOsgi {
 
 }

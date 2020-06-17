@@ -1,4 +1,4 @@
-package net.lr.example.testing;
+package com.phodal.osgisix.testing;
 
 import org.junit.Before;
 import org.junit.Test;

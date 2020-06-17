@@ -1,4 +1,4 @@
-package net.lr.example.testing.osgi.tb;
+package com.phodal.osgisix.testing.osgi.tb;
 
 import static org.ops4j.pax.exam.CoreOptions.streamBundle;
 import static org.ops4j.pax.tinybundles.core.TinyBundles.withBnd;

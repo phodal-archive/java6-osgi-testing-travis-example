@@ -1,4 +1,4 @@
-package net.lr.example.testing;
+package com.phodal.osgisix.testing;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -16,7 +16,7 @@ import org.osgi.service.metatype.annotations.AttributeDefinition;
 import org.osgi.service.metatype.annotations.Designate;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 
-import net.lr.example.testing.PrimeCalculatorServlet.Config;
+import com.phodal.osgisix.testing.PrimeCalculatorServlet.Config;
 
 /**
  * Servlet that displays the prime numbers until the given parameter max.

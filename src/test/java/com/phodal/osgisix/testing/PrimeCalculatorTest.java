@@ -1,4 +1,4 @@
-package net.lr.example.testing;
+package com.phodal.osgisix.testing;
 
 import static org.hamcrest.Matchers.arrayContaining;
 import static org.junit.Assert.assertThat;

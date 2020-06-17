@@ -1,4 +1,4 @@
-package net.lr.example.testing.osgi;
+package com.phodal.osgisix.testing.osgi;
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file

@@ -1,4 +1,4 @@
-package net.lr.example.testing;
+package com.phodal.osgisix.testing;
 
 import static java.util.stream.IntStream.rangeClosed;
 

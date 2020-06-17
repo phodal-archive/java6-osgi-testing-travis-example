@@ -1,4 +1,4 @@
-package net.lr.example.testing.osgi;
+package com.phodal.osgisix.testing.osgi;
 
 import javax.inject.Inject;
 
@@ -8,7 +8,7 @@ import org.ops4j.pax.exam.Configuration;
 import org.ops4j.pax.exam.Option;
 import org.ops4j.pax.exam.junit.PaxExam;
 
-import net.lr.example.testing.PrimeCommand;
+import com.phodal.osgisix.testing.PrimeCommand;
 
 @RunWith(PaxExam.class)
 public class PrimeCommandTest extends BaseTest {

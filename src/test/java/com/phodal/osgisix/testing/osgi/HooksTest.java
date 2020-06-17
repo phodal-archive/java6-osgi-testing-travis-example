@@ -1,4 +1,4 @@
-package net.lr.example.testing.osgi;
+package com.phodal.osgisix.testing.osgi;
 
 import javax.inject.Inject;
 
@@ -13,9 +13,9 @@ import org.ops4j.pax.exam.Option;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.FrameworkUtil;
 
-import net.lr.example.testing.osgi.before.AfterOsgi;
-import net.lr.example.testing.osgi.before.BeforeOsgi;
-import net.lr.example.testing.osgi.before.ExtPaxExam;
+import com.phodal.osgisix.testing.osgi.before.AfterOsgi;
+import com.phodal.osgisix.testing.osgi.before.BeforeOsgi;
+import com.phodal.osgisix.testing.osgi.before.ExtPaxExam;
 
 @RunWith(ExtPaxExam.class)
 public class HooksTest extends BaseTest {

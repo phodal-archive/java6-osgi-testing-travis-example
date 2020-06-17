@@ -1,4 +1,4 @@
-package net.lr.example.testing.osgi;
+package com.phodal.osgisix.testing.osgi;
 
 import static org.awaitility.Awaitility.await;
 import static org.hamcrest.Matchers.notNullValue;

@@ -1,4 +1,4 @@
-package net.lr.example.testing;
+package com.phodal.osgisix.testing;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
@@ -23,7 +23,7 @@ import org.mockito.MockitoAnnotations;
 import org.mockito.Spy;
 import org.osgi.util.converter.Converters;
 
-import net.lr.example.testing.PrimeCalculatorServlet.Config;
+import com.phodal.osgisix.testing.PrimeCalculatorServlet.Config;
 
 public class PrimeCalculatorServletTest {
 

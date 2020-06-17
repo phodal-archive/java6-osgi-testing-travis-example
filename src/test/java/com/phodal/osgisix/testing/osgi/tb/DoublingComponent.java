@@ -1,10 +1,10 @@
-package net.lr.example.testing.osgi.tb;
+package com.phodal.osgisix.testing.osgi.tb;
 
 import java.util.stream.Stream;
 
 import org.osgi.service.component.annotations.Component;
 
-import net.lr.example.testing.IntStreamProcessing;
+import com.phodal.osgisix.testing.IntStreamProcessing;
 
 /**
  * DS Component that doubles a stream of Integers to demonstrate how to create dummy / test

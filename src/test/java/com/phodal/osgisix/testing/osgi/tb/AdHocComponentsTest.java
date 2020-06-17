@@ -1,4 +1,4 @@
-package net.lr.example.testing.osgi.tb;
+package com.phodal.osgisix.testing.osgi.tb;
 
 import static org.hamcrest.Matchers.arrayContaining;
 import static org.junit.Assert.assertThat;
@@ -7,6 +7,8 @@ import java.util.stream.Stream;
 
 import javax.inject.Inject;
 
+import com.phodal.osgisix.testing.IntStreamProcessing;
+import com.phodal.osgisix.testing.osgi.BaseTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.ops4j.pax.exam.Configuration;
@@ -14,9 +16,7 @@ import org.ops4j.pax.exam.Option;
 import org.ops4j.pax.exam.junit.PaxExam;
 import org.ops4j.pax.tinybundles.core.TinyBundles;
 
-import net.lr.example.testing.IntStreamProcessing;
-import net.lr.example.testing.PrimeCalculator;
-import net.lr.example.testing.osgi.BaseTest;
+import com.phodal.osgisix.testing.PrimeCalculator;
 
 /**
  * Sometimes you want to create some DS components just for the test.

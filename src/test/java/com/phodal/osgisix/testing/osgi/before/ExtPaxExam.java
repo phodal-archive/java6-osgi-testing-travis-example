@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package net.lr.example.testing.osgi.before;
+package com.phodal.osgisix.testing.osgi.before;
 
 import static java.util.Arrays.asList;
 
