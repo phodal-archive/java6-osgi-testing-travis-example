@@ -9,8 +9,8 @@
         <relativePath />
     </parent>
 
-    <groupId>net.lr.example</groupId>
-    <artifactId>net.lr.example.testing</artifactId>
+    <groupId>com.phodal</groupId>
+    <artifactId>osgisix.testing</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
