@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1592372691492
+Bundle-Description: "The Apache Software Foundation provides support f
+ or the Apache community of open-source software projects.     The Apa
+ che projects are characterized by a collaborative, consensus based de
+ velopment process, an open and     pragmatic software license, and a 
+ desire to create high quality software that leads the way in its fiel
+ d.     We consider ourselves not simply a group of projects sharing a
+  server, but rather a community of developers     and users."
+Bundle-DocURL: https://www.apache.org/osgisix.testing/
+Bundle-License: "Apache License, Version 2.0";link="https://www.apache
+ .org/licenses/LICENSE-2.0.txt"
+Bundle-ManifestVersion: 2
+Bundle-Name: osgisix.testing
+Bundle-SCM: url="https://github.com/apache/maven-apache-parent/tree/ap
+ ache-19/osgisix.testing",connection="scm:git:https://gitbox.apache.or
+ g/repos/asf/maven-apache-parent.git/osgisix.testing",developer-connec
+ tion="scm:git:https://gitbox.apache.org/repos/asf/maven-apache-parent
+ .git/osgisix.testing",tag=apache-19
+Bundle-SymbolicName: osgisix.testing
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.0.0.202006170544
+Created-By: 1.8.0_202-ea (Oracle Corporation)
+Export-Package: com.phodal.osgisix.testing;version="1.0.0";uses:="java
+ x.servlet,javax.servlet.http"
+Import-Package: com.phodal.osgisix.testing;version="[1.0,2)",javax.ser
+ vlet,javax.servlet.http
+Provide-Capability: osgi.service;objectClass:List<String>="com.phodal.
+ osgisix.testing.PrimeCalculator",osgi.service;objectClass:List<String
+ >="com.phodal.osgisix.testing.PrimeCommand",osgi.service;objectClass:
+ List<String>="javax.servlet.Servlet"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.3.0)(!(version>=2.0.0)))",osgi.service;filter:="(obj
+ ectClass=com.phodal.osgisix.testing.PrimeCalculator)";effective:=acti
+ ve,osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Service-Component: OSGI-INF/com.phodal.osgisix.testing.PrimeCalculator
+ .xml,OSGI-INF/com.phodal.osgisix.testing.PrimeCalculatorServlet.xml,O
+ SGI-INF/com.phodal.osgisix.testing.PrimeCommand.xml
+Tool: Bnd-4.2.0.201903051501
+
