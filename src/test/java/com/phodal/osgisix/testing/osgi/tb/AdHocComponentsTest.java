@@ -1,14 +1,7 @@
 package com.phodal.osgisix.testing.osgi.tb;
 
-import static org.hamcrest.Matchers.arrayContaining;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-
-import java.util.stream.Stream;
-
-import javax.inject.Inject;
-
 import com.phodal.osgisix.testing.IntStreamProcessing;
+import com.phodal.osgisix.testing.PrimeCalculator;
 import com.phodal.osgisix.testing.osgi.BaseTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,7 +10,9 @@ import org.ops4j.pax.exam.Option;
 import org.ops4j.pax.exam.junit.PaxExam;
 import org.ops4j.pax.tinybundles.core.TinyBundles;
 
-import com.phodal.osgisix.testing.PrimeCalculator;
+import javax.inject.Inject;
+
+import static org.junit.Assert.assertTrue;
 
 /**
  * Sometimes you want to create some DS components just for the test.
@@ -45,8 +40,6 @@ public class AdHocComponentsTest extends BaseTest {
 
     @Test
     public void test() {
-//        Stream<Integer> doubleStream = doubler.process(calculator.until(10));
-//        assertThat(doubleStream.toArray(), arrayContaining(4, 6, 10, 14));
         assertTrue(true);
     }
 }

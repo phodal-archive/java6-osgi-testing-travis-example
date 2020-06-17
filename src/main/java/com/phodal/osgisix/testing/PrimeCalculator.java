@@ -1,9 +1,5 @@
 package com.phodal.osgisix.testing;
 
-import static java.util.stream.IntStream.rangeClosed;
-
-import java.util.stream.Stream;
-
 import org.osgi.service.component.annotations.Component;
 
 /**

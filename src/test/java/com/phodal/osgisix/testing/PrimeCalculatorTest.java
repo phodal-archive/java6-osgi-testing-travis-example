@@ -1,12 +1,8 @@
 package com.phodal.osgisix.testing;
 
-import static org.hamcrest.Matchers.arrayContaining;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-
-import java.util.stream.Stream;
-
 import org.junit.Test;
+
+import static org.junit.Assert.assertTrue;
 
 /**
  * Simple test without any magic. Use this for classes that do not need special dependencies
