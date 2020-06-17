@@ -22,5 +22,5 @@ The command "./mvnw --version" failed and exited with 1 during .
 ## 特定版本 Maven
 
 ```
-mvn -N io.takari:maven:wrapper -Dmaven=3.3.3
+mvn -N io.takari:maven:wrapper -Dmaven=3.2.5
 ```
